@@ -1,0 +1,43 @@
+{% extends "master_signin.html" %}
+{% block content %}  
+<form class="form-signin">
+	<div class="text-center mb-4">
+	<img class="mb-1" src="https://i.postimg.cc/Z5Td0dvn/Stash-logos-transparent.png" alt="Transparant Logo" width="180" height="180">
+	<h1 class="h3 mb-3 font-weight-normal">Create an account</h1>
+	</div>
+
+	<div class="form-label-group">
+	<input type="text" id="firstname-reg" class="form-control" placeholder="FirstName" required="" autofocus="">
+	<label for="inputFirstname">First name</label>
+	</div>
+
+	<div class="form-label-group">
+	<input type="text" id="lastname-reg" class="form-control" placeholder="LastName" required="">
+	<label for="inputLastname">Last name</label>
+	</div>
+	
+	<div class="form-label-group">
+	<input type="text" id="username-reg" class="form-control" placeholder="Username" required="">
+	<label for="inputUsername">Username</label>
+	</div>
+	
+	<div class="form-label-group">
+	<input type="email" id="email-reg" class="form-control" placeholder="Email" required="">
+	<label for="inputEmail">Email address</label>
+	</div>
+	
+	<div class="form-label-group">
+	<input type="password" id="pwd-reg" class="form-control" placeholder="Password" required="">
+	<label for="inputPassword">Password</label>
+	</div>
+	
+	<div class="form-label-group">
+	<input type="password" id="pwd-conf-reg" class="form-control" placeholder="PasswordConfirm" required="">
+	<label for="inputPasswordConfirm">Confirm password</label>
+	</div>
+
+	<div class="text-center mb-4">
+	<button class="btn btn-lg btn-primary btn-block" type="submit" id="signup-btn" name="submit-btn" value="Sign up" onclick="signUp()">Sign up</button>
+	</div>
+</form>
+{% endblock %}	

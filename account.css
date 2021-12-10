@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    color: #2e323c;
+    background: #f5f6fa;
+    position: relative;
+    height: 100%;
+}
+
+.main-body {
+    padding: 15px;
+}
+
+.card {
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card-settings {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #ffffff;
+    color: #2e323c;
+}
+
+p {
+    margin: 0px
+}
+
+.h8 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card .atm {
+    width: 90px;
+    height: 90px;
+    object-fit: cover
+}
+
+.card .visa {
+    width: 50px;
+    height: 20px;
+    object-fit: fill
+}
+
+.card .master {
+    width: 50px;
+    height: 50px;
+    object-fit: fill
+}
+
+.debit-card {
+    width: 100%;
+    height: 180px;
+    padding: 20px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #0000001a;
+    transition: all 0.3s ease-in;
+    cursor: pointer
+}
+
+.debit-card:hover {
+    box-shadow: 5px 3px 5px #000000a2
+}
+
+.card-2 {
+    background-color: #21D4FD;
+    background-image: linear-gradient(116deg, #21D4FD 0%, #B721FF 100%)
+}
+
+.text-muted {
+    font-size: 0.8rem
+}
+
+.text-white {
+    font-size: 14px
+}
+
+.input {
+    position: absolute;
+    top: 6px;
+    right: 0
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none
+}
+
+input[type="radio"]:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    color: #fff;
+    font-size: 15px;
+    display: none
+}
+
+input[type="radio"]:hover {
+    background-color: #ddd
+}
+
+.progress_bar .pro-bar {
+    background: hsl(0, 0%, 97%);
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+    height:4px;
+    margin-bottom: 12px;
+    margin-top: 50px;
+    position: relative;
+}
+.progress_bar .progress_bar_title{
+    color: hsl(218, 4%, 50%);
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    top: -28px;
+    z-index: 1;
+}
+.progress_bar .progress_number{
+    float: right;
+    margin-top: -24px;
+}
+.progress_bar .progress-bar-inner {
+    background-color: hsl(0, 0%, 88%);
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s linear 0s;
+}
+.progress_bar .progress-bar-inner:before {
+    content: "";
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    z-index: 1;
+}
+.progress_bar .progress-bar-inner:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: inherit;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: -5px;
+}
+
+.nav-link {
+    color: #4a5568;
+}
+
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+
+.block {
+    background: #fff;
+    border-width: 0;
+    border-radius: .25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+    margin-bottom: 1.5rem
+}
+
+.b-r {
+    border-right: 5px solid rgba(160, 175, 185, .15)
+}

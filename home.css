@@ -1,0 +1,22 @@
+.button-login{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.button-signup{
+	color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    position: absolute;
+    right: 0;
+    transform: translateX(-100%);
+}
+
+ .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}

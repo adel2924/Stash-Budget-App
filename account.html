@@ -1,0 +1,297 @@
+{% extends "master_account.html" %}
+{% block content %} 
+<div class="container">
+<div class="row gutters">
+
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+<div class="card px-4">
+	<div class="card-body">
+		<div class="account-settings">
+			<div class="user-profile">
+				<div class="user-avatar">
+					<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Profile picture">
+				</div>
+				<h5 class="user-name">Adel Luong</h5>
+				<h6 class="user-email">adel@luong.com</h6>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+<div class="card px-4">
+	<div class="card-body">
+		<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<h6 class="mb-2 text-primary">Personal Details</h6>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="fullName">Full Name</label>
+					<input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="eMail">Email</label>
+					<input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="phone">Phone</label>
+					<input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="dob">Date of birth</label>
+					<input type="date" class="form-control" id="dob" placeholder="Enter date of birth">
+				</div>
+			</div>
+		</div>
+		<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<h6 class="mt-3 mb-2 text-primary">Address</h6>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="Street">Street</label>
+					<input type="name" class="form-control" id="Street" placeholder="Enter Street">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="ciTy">City</label>
+					<input type="name" class="form-control" id="ciTy" placeholder="Enter City">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="sTate">State</label>
+					<input type="text" class="form-control" id="sTate" placeholder="Enter State">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="zIp">Zip Code</label>
+					<input type="text" class="form-control" id="zIp" placeholder="Zip Code">
+				</div>
+			</div>
+		</div>
+		<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="text-right">
+					<button type="button" id="update-details" name="submit-btn" class="btn btn-primary" value="Update Prifile" onclick="updateAccount()">Update</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="wrapper">
+					<div class="card px-4">
+						<div class=" my-3">
+							<p class="h8">Your cards</p>
+							<p class="text-muted ">Current cards associated with this account</p>
+						</div>
+						<div class="debit-card mb-3">
+							<div class="d-flex flex-column h-100"> <label class="d-block">
+									<div class="d-flex position-relative">
+										<div> <img src="https://www.freepnglogos.com/uploads/visa-inc-logo-png-11.png" class="visa" alt="">
+											<p class="mt-2 mb-4 text-white fw-bold">Adel Luong</p>
+										</div>
+									</div>
+								</label>
+								<div class="mt-auto fw-bold d-flex align-items-center justify-content-between">
+									<p>4989 1237 1234 4532</p>
+									<p>01/24</p>
+								</div>
+							</div>
+						</div>
+						<div class="debit-card card-2 mb-4">
+							<div class="d-flex flex-column h-100"> <label class="d-block">
+									<div class="d-flex position-relative">
+										<div> <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-png-transparent-svg-vector-bie-supply-0.png" alt="master" class="master">
+											<p class="text-white fw-bold">Adel Luong</p>
+										</div>
+									</div>
+								</label>
+								<div class="mt-auto fw-bold d-flex align-items-center justify-content-between">
+									<p class="m-0">5540 2345 3453 2343</p>
+									<p class="m-0">05/23</p>
+								</div>
+							</div>
+						</div>
+						<button type="button" id="add_card" name="submit-btn" value="Add card" class="btn btn-primary" onclick="updateAccount()">Add new card</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="card px-4">
+				<div class=" my-3">
+					<p class="h8">Your incomes</p>
+					<p class="text-muted ">Current incomes added to this account</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										Job
+										<span class="progress_number">70%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #1abc9c; width: 70%;" data-value="70" data-percentage-value="70"></span>
+								</div>
+							</div>
+				 
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										Funding
+										<span class="progress_number">30%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #fdba04; width: 30%;" data-value="30" data-percentage-value="30"></span>
+								</div>
+							</div>
+							<button type="button" id="add_income" name="submit-btn" name="Add income" class="btn btn-primary" onclick="updateAccount()">Add income</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="card px-4">
+				<div class=" my-3">
+					<p class="h8">Your expenses</p>
+					<p class="text-muted ">Current recurring expenses added to this account</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										Rent
+										<span class="progress_number">60%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #1abc9c; width: 60%;" data-value="60" data-percentage-value="60"></span>
+								</div>
+							</div>
+				 
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										Loans
+										<span class="progress_number">20%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #fdba04; width: 20%;" data-value="20" data-percentage-value="20"></span>
+								</div>
+							</div>
+							
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										Subscriptions
+										<span class="progress_number">10%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #ff5733; width: 10%;" data-value="10" data-percentage-value="10"></span>
+								</div>
+							</div>
+							
+							<button type="button" id="add_expense" name="submit-btn" value="Add expense" class="btn btn-primary" onclick="updateAccount()">Add expense</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="card px-4">
+				<div class=" my-3">
+					<p class="h8">Your goals/targets</p>
+					<p class="text-muted ">Current targets set for yourself</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										£5000 in savings by December 31st
+										<span class="progress_number">80%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #1abc9c; width: 85%;" data-value="85" data-percentage-value="85"></span>
+								</div>
+							</div>
+				 
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										Pay off car loan by July 1
+										<span class="progress_number">15%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #fdba04; width: 15%;" data-value="15" data-percentage-value="15"></span>
+								</div>
+							</div>
+							<button type="button" id="add_goal" name="submit-btn" value="Add goal" class="btn btn-primary" onclick="updateAccount()">Set new goal</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="card px-4">
+				<div class=" my-3">
+					<p class="h8">Your limits</p>
+					<p class="text-muted ">Current financial limits set for yourself</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										£200 monthly limit on groceries
+										<span class="progress_number">60%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #1abc9c; width: 60%;" data-value="60" data-percentage-value="60"></span>
+								</div>
+							</div>
+				 
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										£50 monthly limit on restaurants
+										<span class="progress_number">15%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #fdba04; width: 15%;" data-value="15" data-percentage-value="15"></span>
+								</div>
+							</div>
+							
+							<div class="progress_bar">
+								<div class="pro-bar">
+									<small class="progress_bar_title">
+										£30 monthly limit on travel costs
+										<span class="progress_number">25%</span>
+									</small>
+									<span class="progress-bar-inner" style="background-color: #ff5733; width: 25%;" data-value="25" data-percentage-value="25"></span>
+								</div>
+							</div>
+							
+							<button type="button" id="add_limit" name="submit-btn" value="Add limit" class="btn btn-primary" onclick="updateAccount()">Set new limit</button>
+						</div>
+					</div>
+				</div>
+		</div>
+</div>
+</div>
+	</div>
+</div>
+</div>
+
+</div>
+</div>
+
+{% endblock %}	

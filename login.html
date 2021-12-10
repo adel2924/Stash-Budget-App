@@ -1,0 +1,31 @@
+{% extends "master_signin.html" %}
+{% block content %}  
+<form class="form-signin">
+	<div class="text-center mb-4">
+	<img class="mb-1" src="https://i.postimg.cc/Z5Td0dvn/Stash-logos-transparent.png" alt="Transparant Logo" width="180" height="180">
+	<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+	</div>
+
+	<div class="form-label-group">
+	<input type="text" id="user-login" name="user" class="form-control" placeholder="Username" required="" autofocus="">
+	<label for="inputUsername">Username</label>
+	</div>
+
+	<div class="form-label-group">
+	<input type="password" id="pwd-login" name="password" class="form-control" placeholder="Password" required="">
+	<label for="inputPassword">Password</label>
+	</div>
+	
+	<div class="checkbox mb-3">
+	<div class="text-center mb-4">
+	<label>
+	  <input type="checkbox" value="remember-me"> Remember me
+	</label>
+	</div>
+	</div>
+	
+	<div class="text-center mb-4">
+	<button class="btn btn-lg btn-primary btn-block" type="submit" id="login-btn" name="submit-btn" value="Sign in" <a href="{{ url_for('dashboard') }}" onclick="logIn()"></a>Sign in</button>
+	</div>
+</form>
+{% endblock %}	
